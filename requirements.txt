@@ -1,6 +1,12 @@
-pandas 
+pandas
 numpy
-matplotlib 
+scikit-learn
+xgboost
+matplotlib
 seaborn
-scikit-learn 
-ipykernel 
+plotly
+shap
+streamlit
+joblib
+openpyxl
+jupyter
