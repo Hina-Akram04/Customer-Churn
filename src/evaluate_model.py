@@ -22,13 +22,13 @@ importances = pd.Series(model.feature_importances_, index=feature_names)
 importances = importances.sort_values(ascending=False).head(15)
 
 plt.figure(figsize=(8, 6))
-importances.sort_values().plot(kind="barh", color="#4C72B0")
+importances.sort_values().plot(kind="barh", color="#88A2CD")
 plt.title("Top Feature Importances")
 plt.xlabel("Importance")
 plt.tight_layout()
 plt.savefig("reports/figures/feature_importance.png", dpi=150)
 plt.close()
-print("Saved -> reports/figures/feature_importance.png")
+print("Saved to reports/figures/feature_importance.png")
 
 #SHAP summary plot 
 sample = X_test.sample(min(300, len(X_test)), random_state=42)
